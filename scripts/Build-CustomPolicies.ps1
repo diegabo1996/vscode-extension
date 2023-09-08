@@ -33,7 +33,7 @@ try{
     $AppSettingsJson = Get-Content -Raw -Path $AppSettingsFile | ConvertFrom-Json
 
     #Read all policy files from the root directory            
-    $XmlPolicyFiles = Get-ChildItem -Path $FilePath -Filter *.xml
+    $XmlPolicyFiles = Get-ChildItem -Path $FilePath -Filter *.xml *.cshtml *.js
     Write-Verbose "Files found: $XmlPolicyFiles"
 
     #Get the app settings 

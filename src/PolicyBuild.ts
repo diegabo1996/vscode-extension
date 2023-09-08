@@ -7,7 +7,7 @@ import RenumberStepsMultiplePolicies from './RenumberStepsMultiplePolicies';
 export default class PolicBuild {
     static Build({singlePolicy = false} = {}) {
 
-        var policyFilter: string = "**/*.{xml}";
+        var policyFilter: string = "**/*.{xml,cshtml,js}";
         var targetPolicy: string = "";
         if (singlePolicy) {
             var editor: vscode.TextEditor = vscode.window.activeTextEditor as vscode.TextEditor;
